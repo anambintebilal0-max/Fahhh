@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Little Prince | Book Trailer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&family=Nunito:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="stage" id="stage" data-scene="0">
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div class="glow" aria-hidden="true"></div>
+
+    <div class="art" id="art">
+      <img id="artImg" src="assets/artwork.png" alt="Illustration for the trailer" onerror="this.parentNode.classList.add('missing')">
+      <p class="hint">Put your own illustration at <code>assets/artwork.png</code></p>
+    </div>
+
+    <p class="caption" id="caption"></p>
+
+    <div class="card" id="card">
+      <h1>The Little Prince</h1>
+      <p>Antoine de Saint-Exup&eacute;ry</p>
+    </div>
+    <div class="bar" id="bar"></div>
+  </div>
+  <div class="controls">
+    <span>Press space to replay</span>
+    <button id="replay" type="button">Replay</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
